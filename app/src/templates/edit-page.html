@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGC - Edit Your profile </title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+
+    <style>
+        .circleavatar {
+            border-radius: 50%;
+            margin-bottom: -250px;
+            display: block;
+        }
+
+        form i {
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 800px) {
+        h1 {
+            font-size: 30px;
+        }
+        }
+
+        @media screen and (max-width: 720px) {
+        h1 {
+            font-size: 25px;
+        }
+        }
+
+        @media screen and (max-width: 640px) {
+        h1 {
+            font-size: 20px;
+        }
+        }
+
+        @media screen and (max-width: 492px) {
+        h1 {
+            font-size: 15px;
+            word-wrap: break-word;
+        }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="edit-page">
+        <header>
+            <h1 style="color: #17a2b8">
+                <img src="static/logo.jpg" alt="MGC logo" width="150" height="150" style="margin-left: 10px; margin-top: 10px;" usemap="#logomap"> Music
+                Genre Classification
+                <map name="logomap">
+                    <area alt="logo" title="logo" href="mgc" coords="9,24,176,170" shape="rect">
+                </map>
+                <div class="logged-user"
+                    style="float: right; font-size: medium; margin-right: 10px; margin-top: 20px; display: block;">
+                    <div>
+                        <a href="history">
+                            <button
+                                style="background-color: #49a078; border-color: #49a078; color: #ffff; float:right; margin-right: 20px; margin-top: 20px;"
+                                type="submit" name="logout" class="btn btn-history" value="History">All your saved songs
+                            </button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="logout">
+                            <button
+                                style="background-color: #49a078; border-color: #49a078; color: #ffff; float:right; margin-right: 20px; margin-top: 20px;"
+                                type="submit" name="logout" class="btn btn-logout" value="Logout">Log out
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </h1>
+        </header>
+        &nbsp;
+        <div class="container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+
+                    <div class="card" style="background-color:#eafdec;">
+
+                        <div id="song" class="row justify-content-center align-items-center">
+                            <form id="form" class="form" action="edit-page" method="post" enctype="multipart/form-data">
+                                {% csrf_token %}
+                                <div class="text-center"> &nbsp;
+                                    <h3 class="text-info">Edit profile</h3>
+                                    &nbsp;
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-6">
+                                        <div class="row">
+                                            <img name="avatar" src="static/media/{{ user.profile.image }}"  alt="User's avatar" width="170"
+                                                height="170" class="circleavatar">
+                                        </div>
+                                        <div style="margin-top: 200px;">
+                                            <label for="image" class="text-info">Change your avatar:</label><br>
+                                            <input name="avatar" type="file" style="margin-left: -25px;" id="fileName"
+                                                accept="image/*" enctype="multipart/form-data">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-6">
+                                        <div class="form-group">
+                                            <label for="chusername" class="text-info">Change
+                                                username:</label><br>
+                                            <input type="text" name="chusername" id="chusername" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="npassword" class="text-info">Change
+                                                password:</label><i class="bi bi-eye-slash" id="togglePassword"></i><br>
+                                            <input type="password" name="npassword" id="npassword" class="form-control"
+                                                minlength="8">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="password-confirmation" class="text-info">Confirm
+                                                Password:</label><br>
+                                            <input type="password" name="password-confirmation"
+                                                id="password-confirmation" class="form-control" minlength="8">
+                                        </div>
+
+                                        <script type="text/javascript">
+                                            const togglePassword = document.querySelector('#togglePassword');
+                                            const password = document.querySelector('#npassword');
+                                            const password_confirmation = document.querySelector('#password-confirmation');
+
+                                            togglePassword.addEventListener('click', function (e) {
+                                                const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+                                                password.setAttribute('type', type);
+                                                this.classList.toggle('bi-eye');
+                                            });
+
+                                            togglePassword.addEventListener('click', function (e) {
+                                                const type = password_confirmation.getAttribute('type') === 'password' ? 'text' : 'password';
+                                                password_confirmation.setAttribute('type', type);
+                                                this.classList.toggle('bi-eye');
+                                            });
+                                        </script>
+
+                                        <div class="form-group">
+                                            <a href="delete-account"
+                                                onclick="return confirm('Are you sure you want to delete?')"
+                                                class="text-info">Delete your account</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="text-center" id="failed-alert">
+                                    {% for message in messages %}
+                                    <a> {{message}} </a><br>
+                                    {% endfor %}
+                                </div> &nbsp;
+
+                                <div class="text-center">
+                                    <input style="background-color: #49a078; border-color: #49a078;" type="submit"
+                                            name="submit" class="btn btn-info btn-md text-center" value="Submit">
+                                </div>&nbsp;
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

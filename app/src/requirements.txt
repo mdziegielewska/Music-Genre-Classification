@@ -1,0 +1,12 @@
+asgiref==3.4.1
+Django==3.2.9
+pytz==2021.3
+mysqlclient==2.0.3
+django-session-timeout==0.1.0
+django-rest-passwordreset==1.2.1
+django-brutebuster2==0.1.9
+pysoundfile==0.9.0.post1
+librosa==0.8.1
+pydub==0.25.1
+ffmpeg==1.4
+tensorflow==2.7.0

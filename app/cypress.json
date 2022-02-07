@@ -1,0 +1,17 @@
+{
+  "integrationFolder": "cypress/integration",
+  "fixturesFolder": "cypress/fixtures",
+  "screenshotsFolder": "cypress/mochawesome-report/screenshots",
+  "baseUrl": "http://localhost:8000/",
+  "viewportWidth": 1280,
+  "viewportHeight": 800,
+  "video": false,
+  "chromeWebSecurity": false,
+  "defaultCommandTimeout": 60000,
+  "execTimeout": 60000,
+  "taskTimeout": 25000,
+  "pageLoadTimeout": 60000,
+  "requestTimeout": 60000,
+  "failOnStatusCode": false,
+  "supportFile": "cypress/support"
+}

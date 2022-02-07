@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGC - Search results</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+    <style>
+        .circleavatar {
+            border-radius: 50%;
+            margin-left: -120px;
+            margin-bottom: -150px;
+
+        }
+
+        .input {
+                font-size: 14px;
+                caret-color: #49a078;
+                border-color: #49a078;
+                border-radius: 5px;
+                border-style: solid;
+                display: inline-block;
+                
+        }
+
+        table.table-hover > thead > tr > th{
+            
+            background-color: #eafdec;
+            color: #17a2b8;
+        }
+
+        table.table-hover> tbody > tr > td{
+            background-color: #F9FDF9;
+        }
+
+        @media screen and (max-width: 800px) {
+        h1 {
+            font-size: 30px;
+        }
+        }
+
+        @media screen and (max-width: 720px) {
+        h1 {
+            font-size: 25px;
+        }
+        }
+
+        @media screen and (max-width: 640px) {
+        h1 {
+            font-size: 20px;
+        }
+        }
+
+        @media screen and (max-width: 492px) {
+        h1 {
+            font-size: 15px;
+            word-wrap: break-word;
+        }
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <div id="search-results">
+        <header>
+            <h1 style="color: #17a2b8">
+                <img src="static/logo.jpg" alt="MGC logo" width="150" height="150" style="margin-left: 10px; margin-top: 10px;" usemap="#logomap"> Music Genre Classification
+                <map name="logomap">
+                    <area shape="rect" coords="9,24,176,170" alt="logo" href="mgc">
+                </map>
+
+                <div class="logged-user" style="float: right; font-size: medium; margin-right: 10px; display: block;">
+                    <div>
+                        <a href="edit-page"><img src="static/media/{{ user.profile.image }}" alt="User's avatar" width="90" height="90"
+                                class="circleavatar"></a>
+                    </div>
+                    <div>
+                        <a href="logout">
+                            <button
+                                style="background-color: #49a078; border-color: #49a078; color: #ffff; float:right; margin-right: 20px; margin-top: 20px;"
+                                type="submit" name="logout" class="btn btn-logout" value="Logout">Log out</button>
+                        </a>
+                    </div>
+
+                </div>
+            </h1>
+        </header>
+        &nbsp;
+    </div>
+      <div class="container mb-5">
+        <h3 class="text-center text-info">Search results</h3>&nbsp;&nbsp; 
+        <form action="search" id="search-form" class="saved-songs" method='get' style="width: 290px; font-size: 10px;">
+          {% csrf_token %}
+          <div class="input-group mb-3">
+              <input type="text" name="search-phrase" class="form-control form-control-lg" value="{{ search }}" style="font-size: 16px;">
+              <button type="submit" class="input-group-text btn-success"><i class="bi bi-search me-2"></i></button>
+              <a href="history" class="btn input-group-text btn-reset btn-md"><i class="bi bi-x me-2"></i></a>
+          </div>
+      </form>
+        {% if saved_songs|length == 0 %}
+            <div id="info-box">
+              &nbsp;
+              <h4 class="text-center" style="font: 7px">I am sorry. We couldn't find anything.</h3>
+          </div>
+        {% else %}
+        <table class="table table-hover" style="margin-top: 20px; ">
+          <thead>
+            <tr>
+              <th style="width: 5%"></th>
+              <th style="width: 20%">Song name</th>
+              <th style="width: 20%">Genre</th>
+              <th style="width: 25%">Source</th>
+              <th style="width: 20%">Date</th>
+              <th style="width: 10%"></th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for song in saved_songs %}
+            <tr>
+              <td> {{ song.idx }}</td>
+              <td> {{ song.song_name }} </td>
+              <td> {{ song.genre }} </td>
+              <td> {{ song.source }} </td>
+              <td> {{ song.date }} </td>
+              <td>
+                <form id="delete-song-form" class="form" action="delete-song" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                  <input type="hidden" name="name" id="song_name" value="{{ song.song_name }}">
+                  <input onclick="return confirm('Are you sure you want to delete?')"style="background-color: #49a078; border-color: #49a078;" type="submit"
+                      class="btn btn-info btn-md text-center" value="Delete">
+                </form>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      {% endif %}
+      </div>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGC - Your Result</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <style>
+        .circleavatar {
+            border-radius: 50%;
+            margin-left: -120px;
+            margin-bottom: -150px;
+
+        }
+
+        @media screen and (max-width: 800px) {
+        h1 {
+            font-size: 30px;
+        }
+        }
+
+        @media screen and (max-width: 720px) {
+        h1 {
+            font-size: 25px;
+        }
+        }
+
+        @media screen and (max-width: 640px) {
+        h1 {
+            font-size: 20px;
+        }
+        }
+
+        @media screen and (max-width: 492px) {
+        h1 {
+            font-size: 15px;
+            word-wrap: break-word;
+        }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="result">
+        <header>
+            {% if user.is_authenticated %}
+            <h1 style="color: #17a2b8">
+                <img src="static/logo.jpg" alt="MGC logo" width="150" height="150" style="margin-left: 10px; margin-top: 10px;" usemap="#logomap"> Music Genre Classification
+                <map name="logomap">
+                    <area alt="logo" title="logo" href="mgc" coords="9,24,176,170" shape="rect">
+                </map>
+                <div class="logged-user" style="float: right; font-size: medium; margin-right: 10px; display: block;">
+                    <div>
+                        <a href="edit-page"><img src="static/media/{{ user.profile.image }}" alt="User's avatar" width="90" height="90"
+                                class="circleavatar"></a>
+                    </div>
+                    <div>
+                        <a href="history">
+                            <button
+                                style="background-color: #49a078; border-color: #49a078; color: #ffff; float:right; margin-right: 20px; margin-top: 20px;"
+                                type="submit" name="history" class="btn btn-history" value="History">All your saved songs</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="logout">
+                            <button
+                                style="background-color: #49a078; border-color: #49a078; color: #ffff; float:right; margin-right: 20px; margin-top: 20px;"
+                                type="submit" name="logout" class="btn btn-logout" value="Logout">Log out</button>
+                        </a>
+                    </div>
+
+                </div>
+            </h1>
+            {% else %}
+            <h1 style="color: #17a2b8">
+                <img src="static/logo.jpg"  alt="MGC logo" width="150" height="150" style="margin-left: 10px; margin-top: 10px;" usemap="#logomap"> Music Genre Classification
+                <map name="logomap">
+                    <area alt="logo" title="logo" href="mgc" coords="9,24,176,170" shape="rect">
+                </map>
+                <a href="sign-in">
+                    <button
+                        style="background-color: #1446a0; border-color: #1446a0; color: #ffff; float:right; margin-right: 20px; margin-top: 20px;"
+                        type="submit" name="login" class="btn btn-login" value="Login">Log in</button>
+                </a>
+            </h1>
+            {% endif %}
+        </header>
+        &nbsp;
+        <div class="container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    {% if user.is_authenticated %}
+                    <div class="card" style="background-color:#eafdec;">
+                        {% else %}
+                        <div class="card" style="background-color:#f8f7ff;">
+                            {% endif %}
+                            <div id="result" class="row justify-content-center align-items-center">
+                                <div id="result-column" class="col-md-6">
+                                    <div id="result-box" class="col-md-12">
+                                        <form id="save-form" class="form" action="save" method="get"
+                                            enctype="multipart/form-data">
+                                            {% csrf_token %}
+                                            <div class="text-center">
+                                                &nbsp;
+                                                <h3 class="text-info">Classification successfully completed!</h3>
+                                                &nbsp;
+                                            </div>&nbsp;
+                                            <div class="text-center">
+                                                <span style="margin-left: -90px;">Genre: <b><i>{{ genre }}</i></b></span>
+                                                <input type="hidden" name="genre" id="genre" value="{{ genre }}">
+                                                <input type="hidden" name="source" id="source" value="{{ source }}">
+                                                <div class="text-center"
+                                                    style="display: inline; margin-left: 100px; margin-right: -100px;">
+                                                    {% if user.is_authenticated %}
+                                                    <input style="background-color: #49a078; border-color: #49a078"
+                                                        type="submit" name="save" class="btn btn-info btn-md"
+                                                        value="Save">
+                                                    {% else %}
+                                                    <input style="background-color: #1446a0; border-color: #1446a0"
+                                                        type="submit" name="save" class="btn btn-info btn-md"
+                                                        value="Save">
+                                                    {% endif %}
+                                                </div> &nbsp;
+                                            </div>
+                                        </form>
+                                        &nbsp;
+                                        &nbsp;
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="similar-songs">
+                                <div class="text-center">
+                                    &nbsp;
+                                    <h3 class="text-info align-left mb-3"  style="float: left; margin-left: 100px;">Similar songs: </h3>
+                                    &nbsp;
+                                </div>
+                            </div>
+                            <div id="songs" class="align-items-center">
+                                <div class="first-song" style="margin-left: 100px;">
+                                    <iframe src="{{ similar_song1 }}" width="250px" height="80px" frameBorder="0"
+                                        allowfullscreen=""
+                                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                                    <iframe style="margin-right: 100px;" src="{{ similar_song2 }}" width="250px"
+                                        height="80px" frameBorder="0" allowfullscreen=""
+                                        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                                </div>
+                            </div>&nbsp;
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

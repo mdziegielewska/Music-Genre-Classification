@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGC - Not Found</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <style>
+        .circleavatar {
+            border-radius: 50%;
+            margin-left: -120px;
+            margin-bottom: -150px;
+
+        }
+
+        @media screen and (max-width: 800px) {
+        h1 {
+            font-size: 30px;
+        }
+        }
+
+        @media screen and (max-width: 720px) {
+        h1 {
+            font-size: 25px;
+        }
+        }
+
+        @media screen and (max-width: 640px) {
+        h1 {
+            font-size: 20px;
+        }
+        }
+
+        @media screen and (max-width: 492px) {
+        h1 {
+            font-size: 15px;
+            word-wrap: break-word;
+        }
+        }
+    </style>
+
+    
+
+
+
+</head>
+
+<body>
+    <div id="not-found">
+        <header>
+            {% if user.is_authenticated %}
+            <h1 style="color: #17a2b8">
+                <img src="static/logo.jpg" alt="MGC logo" width="150" height="150" style="margin-left: 10px; margin-top: 10px;" usemap="#logomap"> Music Genre Classification
+                <map name="logomap">
+                    <area shape="rect" coords="9,24,176,170" alt="logo" href="mgc">
+                </map>
+
+                <div class="logged-user" style="float: right; font-size: medium; margin-right: 10px; display: block;">
+                    <div>
+                        <a href="edit-page"><img src="static/media/{{ user.profile.image }}"  alt="User's avatar" width="90" height="90"
+                                class="circleavatar"></a>
+                    </div>
+                    <div>
+                        <a href="history">
+                            <button
+                                style="background-color: #49a078; border-color: #49a078; color: #ffff; float:right; margin-right: 20px; margin-top: 20px;"
+                                type="submit" name="history" class="btn btn-history" value="History">All your saved
+                                songs</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="logout">
+                            <button
+                                style="background-color: #49a078; border-color: #49a078; color: #ffff; float:right; margin-right: 20px; margin-top: 20px;"
+                                type="submit" name="logout" class="btn btn-logout" value="Logout">Log out</button>
+                        </a>
+                    </div>
+
+                </div>
+            </h1>
+            {% else %}
+            <h1 style="color: #17a2b8">
+                <img src="static/logo.jpg" alt="MGC logo" width="150" height="150" style="margin-left: 10px; margin-top: 10px;" usemap="#logomap"> Music Genre Classification
+                <map name="logomap">
+                    <area alt="logo" title="logo" href="mgc" coords="9,24,176,170" shape="rect">
+                </map>
+                <a href="sign-in">
+                    <button
+                        style="background-color: #1446a0; border-color: #1446a0; color: #ffff; float:right; margin-right: 20px; margin-top: 20px;"
+                        type="submit" name="login" class="btn btn-login" value="Login">Log in</button>
+                </a>
+            </h1>
+            {% endif %}
+        </header>
+        &nbsp;
+    </div>
+    &nbsp;
+    &nbsp;
+    <div id="info-box">
+        <h3 class="text-center" style="font: 7px">I am sorry. The page you are looking for does not exist.</h3>
+    </div>
+</body>
+
+</html>

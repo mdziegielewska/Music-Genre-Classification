@@ -1,0 +1,45 @@
+__pycache__
+
+# environment
+/myenv/
+
+# distribution / packaging
+/dist
+/tmp
+/lib
+
+# dependencies
+/node_modules/
+
+# ide - vscode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# ide - pycharm
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/vcs.xml
+.idea/jsLibraryMappings.xml
+.idea/dataSources.ids
+.idea/dataSources.xml
+.idea/dataSources.local.xml
+.idea/sqlDataSources.xml
+.idea/dynamic.xml
+.idea/uiDesigner.xml
+
+# misc
+npm-debug.log
+yarn-error.log
+
+# cypress
+cypress/videos
+cypress/screenshots
+cypress.env.json
+
+# uploaded photos
+src/predict.json

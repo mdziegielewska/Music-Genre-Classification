@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGC - Save a song</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <style>
+        .circleavatar {
+            border-radius: 50%;
+            margin-left: -120px;
+            margin-bottom: -150px;
+
+        }
+
+        @media screen and (max-width: 800px) {
+        h1 {
+            font-size: 30px;
+        }
+        }
+
+        @media screen and (max-width: 720px) {
+        h1 {
+            font-size: 25px;
+        }
+        }
+
+        @media screen and (max-width: 640px) {
+        h1 {
+            font-size: 20px;
+        }
+        }
+
+        @media screen and (max-width: 492px) {
+        h1 {
+            font-size: 15px;
+            word-wrap: break-word;
+        }
+        }
+    </style>
+
+    <script type="text/javascript">
+        function verifyButton() {
+            var submitButton = document.getElementById('submit-button');
+            var infoMessage = document.getElementById('message-info').textContent;
+
+            if (infoMessage == " Your song has been saved. ") {
+                submitButton.disabled = true;
+                console.log('true');
+            } else {
+                console.log('false');
+            }
+        };
+    </script>
+</head>
+
+<body onload="verifyButton()">
+    <div id="save-song">
+        <header>
+            <h1 style="color: #17a2b8">
+                <img src="static/logo.jpg" alt="MGC logo" width="150" height="150" style="margin-left: 10px; margin-top: 10px;" usemap="#logomap"> Music Genre Classification
+                <map name="logomap">
+                    <area alt="logo" title="logo" href="mgc" coords="9,24,176,170" shape="rect">
+                </map>
+                <div class="logged-user" style="float: right; font-size: medium; margin-right: 10px; display: block;">
+                    <div>
+                        <a href="edit-page"><img src="static/media/{{ user.profile.image }}" alt="User's avatar" width="90" height="90"
+                                class="circleavatar"></a>
+                    </div>
+                    <div>
+                        <a href="history">
+                            <button
+                                style="background-color: #49a078; border-color: #49a078; color: #ffff; float:right; margin-right: 20px; margin-top: 20px;"
+                                type="submit" name="history" class="btn btn-history" value="History">All your saved songs</button>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="logout">
+                            <button
+                                style="background-color: #49a078; border-color: #49a078; color: #ffff; float:right; margin-right: 20px; margin-top: 20px;"
+                                type="submit" name="logout" class="btn btn-logout" value="Logout">Log out</button>
+                        </a>
+                    </div>
+
+                </div>
+            </h1>
+        </header>
+        &nbsp;
+        <div class="container mb-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card" style="background-color:#eafdec;">
+                        <div id="save-row" class="row justify-content-center align-items-center center-block">
+                            <div id="save-column" class="col-md-6">
+                                <div id="save-box" class="col-md-12">
+                                    <form id="save-form" class="form center-block" action="save" method="post">
+                                        &nbsp;
+                                        {% csrf_token %}
+                                        <h3 class=" text-center text-info">Save your song</h3>
+                                        &nbsp;
+                                        <div class="text-center form-group" style="color: #17a2b8;">
+                                            <label for="song-name" class="text-info" style="float: left;">Genre:</label>
+                                            <span><b><i>{{ genre }}</i></b></span>
+                                            <input type="hidden" name="genre" id="genre" value="{{ genre }}">
+                                        </div>
+                                        <div class="text-center form-group" style="color: #17a2b8;">
+                                            <label for="song-name" class="text-info"
+                                                style="float: left;">Source:</label>
+                                            <span><b><i>{{ source }}</i></b></span>
+                                            <input type="hidden" name="source" id="source" value="{{ source }}">
+                                        </div>
+                                        <div class="form-group center-block">
+                                            <label for="song-name" class="text-info" style="float: left;">Name:</label>
+                                            <input type="text" name="song-name" id="song-name" class="form-control"
+                                                required>
+                                        </div>
+                                        <div class="text-center">
+                                            {% for message in messages %}
+                                            <a id="message-info"> {{message}} </a>
+                                            {% endfor %}
+                                        </div> &nbsp;
+                                        <div class="text-center" id="save">
+                                            <input style="background-color: #49a078; border-color: #49a078"
+                                                type="submit" id="submit-button" name="submit" class="btn btn-info btn-md" value="Save">
+                                        </div>&nbsp; &nbsp;
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
