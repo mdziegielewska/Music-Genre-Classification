@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="12.79" multi-file="no" uid="simpf0fddb82f80a4e76b6066d6e47b10b90">
+  <meta>
+    <name>GR4(MGC)-CD-WER1</name>
+    <authors> </authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type stereotype="component" type-id="component" type="Component" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="drawing-shape" type="Simple Shape" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="element-detail" type="Element Detail" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="text" type="Text" />
+        <value>3</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="group" type="Group" />
+        <value>213</value>
+      </counter>
+      <counter>
+        <item-type type-id="component" type="Component" />
+        <value>4</value>
+      </counter>
+      <counter>
+        <item-type type-id="drawing-shape" type="Simple Shape" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="element-detail" type="Element Detail" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="comment-connector" type="Comment Connector" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="uml-provided-interface-connector" type="Provided Interface Connector" />
+        <value>5</value>
+      </counter>
+      <counter>
+        <item-type type-id="uml-interface" type="Provided Interface End" />
+        <value>4</value>
+      </counter>
+      <counter>
+        <item-type type-id="abstraction" type="Abstraction" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="dependency" type="Dependency" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="uml-required-interface-connector" type="Required Interface Connector" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="uml-required-interface-end" type="Required Interface End" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="text" type="Text" />
+        <value>8</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlComponentDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields />
+  </counters>
+  <alias-groups />
+  <management uid="md-7988ac08fbca4bc887decfe3a8a12615" name="" task-id-sequence="0">
+    <persons>
+      <person id="">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-7ffc79730fd146668014454186c21b84" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types />
+  </types>
+  <items>
+    <item id="9b4cc4fdd20e41f9b0145823024470cf" cid="ED001" type="element-detail" name="ElementDetail1" style-class="" creator="" creation-date="05/25/2021 19:02:17">
+      <element-detail include-defaults="false" model-ref="100cc5ea828f4077b057a84818308721" />
+    </item>
+    <item id="0ca7c3e2989e4fc381ec9dc448f50e47" cid="IFC002" type="uml-interface" name="" style-class="" creator="" creation-date="05/25/2021 19:06:23">
+      <interface />
+    </item>
+    <item id="bf79383569824e2982bcccabfb9272f6" cid="RQI001" type="uml-required-interface-end" name="" style-class="" creator="" creation-date="05/25/2021 19:06:38">
+      <required-interface interface-ref="0ca7c3e2989e4fc381ec9dc448f50e47" />
+    </item>
+    <item id="d048443d232e4ad195f31430686a0e33" cid="IFC003" type="uml-interface" name="" style-class="" creator="" creation-date="05/25/2021 19:07:02">
+      <interface />
+    </item>
+    <item id="2c3b9925a3434ce0b4a3579738b1f7e0" cid="ED002" type="element-detail" name="ElementDetail2" style-class="" creator="" creation-date="05/25/2021 19:07:10">
+      <element-detail include-defaults="false" model-ref="d048443d232e4ad195f31430686a0e33" />
+    </item>
+  </items>
+  <models>
+    <model id="p2b5d3f92c1bb4954b2f6a19b8aaa9c5b_535984984" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>05/25/2021 18:59:55</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-component" id="p9cc38f48f19a45fdb0b7e2b95be5d355_250538080" name="ComponentDiagram1" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>05/25/2021 18:59:55</creation-date>
+          <change-date>05/25/2021 19:20:33</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="71505af3ed2d48d9b3fb35dede8efd6f" cid="CPT001" type="component" name="MGC" style-class="" change-tracking-state="added" creator="" creation-date="05/25/2021 19:00:30">
+            <stereotypes>
+              <stereotype name="component" />
+            </stereotypes>
+            <stereotype-instances>
+              <stereotype id="71505af3ed2d48d9b3fb35dede8efd6f_component_c" type="component" ref="" />
+            </stereotype-instances>
+            <component />
+          </item>
+          <item id="100cc5ea828f4077b057a84818308721" cid="ELEM001" type="drawing-shape" name="SimpleShape1" style-class="" change-tracking-state="added" creator="" creation-date="05/25/2021 19:01:12">
+            <style style-name="Default" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+              <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+              <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <background type="solid" colors="#FFF2F2F2,#FFF2F2F2" />
+              <border color="#FF555555" width="2" dash-style="Solid" />
+              <label-connector color="#80000000" width="1" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+                  <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+                  <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <background type="solid" colors="#FF203D85,#FF203D85" />
+                  <border color="#FF203D85" width="2" dash-style="Solid" />
+                  <label-connector color="#80000000" width="1" dash-style="Dash" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
+            <drawing />
+            <drawing-shape type="Rectangle" />
+          </item>
+          <item id="ae3da433f1164ba886a775d23d021c6f" cid="CPT002" type="component" name="Baza danych MySQL" style-class="" change-tracking-state="added" creator="" creation-date="05/25/2021 19:04:02">
+            <stereotypes>
+              <stereotype name="component" />
+            </stereotypes>
+            <stereotype-instances>
+              <stereotype id="ae3da433f1164ba886a775d23d021c6f_component_c" type="component" ref="" />
+            </stereotype-instances>
+            <component />
+          </item>
+          <item id="ff5fd20a51c546e7a7341ed8030befbd" cid="CPT003" type="component" name="Interfejs użytkownika" style-class="" change-tracking-state="added" creator="" creation-date="05/25/2021 19:04:18">
+            <stereotypes>
+              <stereotype name="component" />
+            </stereotypes>
+            <stereotype-instances>
+              <stereotype id="ff5fd20a51c546e7a7341ed8030befbd_component_c" type="component" ref="" />
+            </stereotype-instances>
+            <component />
+          </item>
+          <item id="2990c6dac9d94d49919f3299dcab784e" cid="DEP001" type="dependency" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/25/2021 19:05:58" from="71505af3ed2d48d9b3fb35dede8efd6f" to="ff5fd20a51c546e7a7341ed8030befbd" visibility="package" />
+          <item id="1f6d26122662474588cee60820c1e749" cid="ELEM003" type="uml-provided-interface-connector" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/25/2021 19:06:23" from="71505af3ed2d48d9b3fb35dede8efd6f" to="0ca7c3e2989e4fc381ec9dc448f50e47" />
+          <item id="3295ccd9a0bf4d2eaa92c89d85893bfe" cid="ELEM002" type="uml-required-interface-connector" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/25/2021 19:06:38" from="ae3da433f1164ba886a775d23d021c6f" to="bf79383569824e2982bcccabfb9272f6" />
+          <item id="5022b8a4a1da40b09979342ee08a67de" cid="ELEM004" type="uml-provided-interface-connector" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/25/2021 19:07:02" from="100cc5ea828f4077b057a84818308721" to="d048443d232e4ad195f31430686a0e33" />
+          <item id="83d591cc8e8c4c02b051125479b5a25a" cid="ELEM005" type="text" name="Text1" style-class="Transparent" change-tracking-state="added" creator="" creation-date="05/25/2021 19:14:30">
+            <style class="Transparent" />
+            <drawing-text>
+              <text>Serwer
+</text>
+            </drawing-text>
+          </item>
+          <item id="3397eccbfe2b49f580767251a2326b80" cid="ELEM006" type="text" name="Text2" style-class="Transparent" change-tracking-state="added" creator="" creation-date="05/25/2021 19:15:09">
+            <style class="Transparent" />
+            <drawing-text>
+              <text>https</text>
+            </drawing-text>
+          </item>
+          <item id="0499d27f5de44a0ba53083658fa13919" cid="ELEM007" type="text" name="Text3" style-class="Transparent" change-tracking-state="added" creator="" creation-date="05/25/2021 19:20:33">
+            <style class="Transparent" />
+            <drawing-text>
+              <text>www</text>
+            </drawing-text>
+          </item>
+        </abstract-items>
+        <layer id="4898d79538ec4625b10e07d90cfffd39" name="Default" visible="true" enabled="true" locked="false">
+          <item id="100cc5ea828f4077b057a84818308721" iid="764c34084e1e4593a0e6a213a86629c5" creation-date="05/25/2021 19:01:12" order-index="1" type="entity">
+            <layout ax="151" ay="22" awidth="688" aheight="463.5" x="151" y="22" width="688" height="463.5" rotation-center="-199.5,-135.75" />
+          </item>
+          <item id="5022b8a4a1da40b09979342ee08a67de" iid="ec18165cdcea41c38850cf76c0640069" show-name="false" creation-date="05/25/2021 19:07:02" order-index="9" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-to-fields="false" auto-path="" x1="151" y1="161" x2="62" y2="159" start-border-pos="0.925" end-border-pos="0.377376251220703" start-local-pos="117">
+              <points>
+                <point x="151" y="161" />
+                <point x="62" y="159" />
+              </points>
+            </layout>
+            <attached-parts>
+              <attached-part ref="e2fafede04e049a48e73cf4c24ac7fb0" />
+            </attached-parts>
+            <relation from="100cc5ea828f4077b057a84818308721" from-iid="764c34084e1e4593a0e6a213a86629c5" to="d048443d232e4ad195f31430686a0e33" to-iid="e2fafede04e049a48e73cf4c24ac7fb0" />
+          </item>
+          <item id="d048443d232e4ad195f31430686a0e33" iid="e2fafede04e049a48e73cf4c24ac7fb0" creation-date="05/25/2021 19:07:02" order-index="10" type="entity">
+            <layout name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" ax="37.5" ay="146.5" awidth="25" aheight="25" x="37.5" y="146.5" width="25" height="25" />
+            <attached-parts>
+              <attached-part ref="ec18165cdcea41c38850cf76c0640069" />
+            </attached-parts>
+            <interface />
+          </item>
+          <item id="71505af3ed2d48d9b3fb35dede8efd6f" iid="04c16720351e4fe6a9adfc3b1680cf40" show-fields="false" creation-date="05/25/2021 19:00:30" order-index="0" type="entity">
+            <layout ax="267.5" ay="79" awidth="140" aheight="160" x="267.5" y="79" width="140" height="160" />
+          </item>
+          <item id="ae3da433f1164ba886a775d23d021c6f" iid="c5d40327e465431eb10fe4873974cc18" show-fields="false" creation-date="05/25/2021 19:04:02" order-index="2" type="entity">
+            <layout ax="438" ay="316" awidth="158" aheight="160" x="438" y="316" width="158" height="160" rotation-center="-9,0" />
+          </item>
+          <item id="ff5fd20a51c546e7a7341ed8030befbd" iid="b16ac3a290fe4d9db404d3e2f4f1d437" show-fields="false" creation-date="05/25/2021 19:04:18" order-index="3" type="entity">
+            <layout ax="513" ay="79" awidth="171" aheight="160" x="513" y="79" width="171" height="160" rotation-center="-15.5,0" />
+          </item>
+          <item id="0ca7c3e2989e4fc381ec9dc448f50e47" iid="e0bd15c6e14943b497887164866b47eb" creation-date="05/25/2021 19:06:23" order-index="6" type="entity">
+            <layout name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" ax="411.5" ay="252.5" awidth="25" aheight="25" x="411.5" y="252.5" width="25" height="25" />
+            <attached-parts>
+              <attached-part ref="cab67f0ff3964b64a49db163c33829d1" />
+            </attached-parts>
+            <interface />
+          </item>
+          <item id="bf79383569824e2982bcccabfb9272f6" iid="45b3858cfa9f497b826f130a50ca9b67" creation-date="05/25/2021 19:06:38" order-index="8" type="entity">
+            <layout name-position="0,10" name-anchor="bottom" auto-anchor="true" label-attached="false" ax="407.5" ay="248.5" awidth="33" aheight="33" x="-573" y="-51" width="25" height="25" />
+            <attached-parts>
+              <attached-part ref="ec1283cdedac4b228c694da5fce74293" />
+            </attached-parts>
+            <required-interface />
+          </item>
+          <item id="2990c6dac9d94d49919f3299dcab784e" iid="b5655683cc39480ab9fb8f936e523dcf" creation-date="05/25/2021 19:05:58" order-index="4" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="408" y1="159" x2="513" y2="159" start-border-pos="0.375" end-border-pos="0.875" start-local-pos="80" end-local-pos="80" name-position="0,20">
+              <points>
+                <point x="408" y="159" />
+                <point x="513" y="159" />
+              </points>
+            </layout>
+            <relation from="71505af3ed2d48d9b3fb35dede8efd6f" from-iid="04c16720351e4fe6a9adfc3b1680cf40" to="ff5fd20a51c546e7a7341ed8030befbd" to-iid="b16ac3a290fe4d9db404d3e2f4f1d437" />
+          </item>
+          <item id="1f6d26122662474588cee60820c1e749" iid="cab67f0ff3964b64a49db163c33829d1" show-name="false" creation-date="05/25/2021 19:06:23" order-index="5" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-to-fields="false" auto-path="" x1="408" y1="239" x2="417" y2="254" start-border-pos="0.5" end-border-pos="0.045" start-local-pos="160">
+              <points>
+                <point x="408" y="239" />
+                <point x="417" y="254" />
+              </points>
+            </layout>
+            <attached-parts>
+              <attached-part ref="e0bd15c6e14943b497887164866b47eb" />
+            </attached-parts>
+            <relation from="71505af3ed2d48d9b3fb35dede8efd6f" from-iid="04c16720351e4fe6a9adfc3b1680cf40" to="0ca7c3e2989e4fc381ec9dc448f50e47" to-iid="e0bd15c6e14943b497887164866b47eb" />
+          </item>
+          <item id="3295ccd9a0bf4d2eaa92c89d85893bfe" iid="ec1283cdedac4b228c694da5fce74293" show-name="false" creation-date="05/25/2021 19:06:38" order-index="7" type="relation">
+            <layout line-style="oblique" lock-start-point="true" lock-to-fields="false" auto-path="" x1="464" y1="316" x2="434" y2="278" start-border-pos="0.0411392405063291" end-border-pos="0.52993173310251" start-local-pos="26">
+              <points>
+                <point x="464" y="316" />
+                <point x="434" y="278" />
+              </points>
+            </layout>
+            <attached-parts>
+              <attached-part ref="45b3858cfa9f497b826f130a50ca9b67" />
+            </attached-parts>
+            <relation from="ae3da433f1164ba886a775d23d021c6f" from-iid="c5d40327e465431eb10fe4873974cc18" to="bf79383569824e2982bcccabfb9272f6" to-iid="45b3858cfa9f497b826f130a50ca9b67" />
+          </item>
+          <item id="83d591cc8e8c4c02b051125479b5a25a" iid="cf8f202302d84506b4878aaec4936401" creation-date="05/25/2021 19:14:30" order-index="11" type="drawing-text">
+            <layout ax="470" ay="22" awidth="50" aheight="33.5" x="470" y="22" width="50" height="33.5" />
+          </item>
+          <item id="3397eccbfe2b49f580767251a2326b80" iid="a8599b9375b54a44b3576b0a51654980" creation-date="05/25/2021 19:15:09" order-index="12" type="drawing-text">
+            <layout ax="74" ay="138" awidth="62" aheight="21" x="74" y="138" width="36" height="11" />
+          </item>
+          <item id="0499d27f5de44a0ba53083658fa13919" iid="09c12156e3494640972c87f1a1881406" creation-date="05/25/2021 19:20:33" order-index="13" type="drawing-text">
+            <layout ax="20" ay="122.5" awidth="60" aheight="26" x="20" y="122.5" width="60" height="26" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>

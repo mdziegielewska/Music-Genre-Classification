@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="12.79" multi-file="no" uid="simpb8157baece1a4967b2c47d0ba5c1cb00">
+  <meta>
+    <name>(Project)</name>
+    <authors> </authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="object" type="Object" />
+        <value>3</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="group" type="Group" />
+        <value>136</value>
+      </counter>
+      <counter>
+        <item-type type-id="class" type="Class" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="object" type="Object" />
+        <value>4</value>
+      </counter>
+      <counter>
+        <item-type type-id="generalization" type="Generalization" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="relationship" type="Association" />
+        <value>3</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlObjectDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields />
+  </counters>
+  <alias-groups />
+  <management uid="md-fb9c5ffb91364ff48489531356de64c9" name="" task-id-sequence="0">
+    <working-schedule uid="ws-2ba8f4be535d4e1094ce88ef98d10fa8" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+    <persons>
+      <person id="">
+        <first-name />
+        <last-name />
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+        <working-schedule uid="ws-1953cd110ab847c28184c152bbb77376" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-6d57c0afb72f4d1dbe09c5c8097b81f5" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types />
+  </types>
+  <items />
+  <models>
+    <model id="pcbf3eec4669d4e039138ece69dfc398c_150233579" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>05/04/2021 17:13:18</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-object" id="pec3abc6e9654443789c5f3368285171c_262289920" name="ObjectDiagram1" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>05/04/2021 17:13:18</creation-date>
+          <change-date>05/05/2021 15:10:39</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="791a64becbae4057a08b6ec891e92421" cid="OBJ001" type="object" name="P1" style-class="" change-tracking-state="added" creator="" creation-date="05/04/2021 17:13:51" visibility="undefined">
+            <object classifier-name="Piosenka">
+              <attributes>
+                <attribute name="tytuł" value="&quot;Dynamite&quot;" />
+                <attribute name="gatunek" value="&quot;Pop&quot;" />
+                <attribute name="źródło" value="&quot;https://www.youtube.com/watch?v=gdZLi9oWNZ&quot;" />
+              </attributes>
+            </object>
+          </item>
+          <item id="ab9fc99f79bd4335b26d4fc99cac4ce4" cid="OBJ002" type="object" name="S1" style-class="" change-tracking-state="added" creator="" creation-date="05/04/2021 17:16:12" visibility="undefined">
+            <object classifier-name="Podobny utwór">
+              <attributes>
+                <attribute name="tytuł" value="&quot;Savage love&quot;" />
+                <attribute name="gatunek" value="&quot;Pop&quot;" />
+                <attribute name="źródło" value="&quot;https://www.youtube.com/watch?v=qvu4nPMyl3U&quot;" />
+              </attributes>
+            </object>
+          </item>
+          <item id="5039d70939c94b59a8bf1bc42f25399b" cid="REL002" type="relationship" name="" style-class="" change-tracking-state="added" creation-date="05/05/2021 15:10:39" from="791a64becbae4057a08b6ec891e92421" to="ab9fc99f79bd4335b26d4fc99cac4ce4" visibility="package">
+            <relation from="791a64becbae4057a08b6ec891e92421" to="ab9fc99f79bd4335b26d4fc99cac4ce4" derived="false">
+              <start-role id="umlar-3af13136-f446-44ae-8b8b-89616a042e08" name="" multiplicity="1" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-81fc5d34-b1dc-401e-b9e1-cd9063bb912d" name="" multiplicity="1..*" navigability="" association-type="association" visibility="private" />
+            </relation>
+          </item>
+          <item id="68f07e735e53461faabfb6aa84485fcc" cid="OBJ003" type="object" name="H1" style-class="" change-tracking-state="added" creator="" creation-date="05/04/2021 17:19:00" visibility="undefined">
+            <object classifier-name="Historia">
+              <attributes>
+                <attribute name="piosenka" value="P1" />
+                <attribute name="data" value="&quot;04.05.2021&quot;" />
+              </attributes>
+            </object>
+          </item>
+          <item id="ee2c274caac642c59cde672925204188" cid="REL001" type="relationship" name="" style-class="" change-tracking-state="added" creator="" creation-date="05/04/2021 17:19:49" from="791a64becbae4057a08b6ec891e92421" to="68f07e735e53461faabfb6aa84485fcc" visibility="package">
+            <relation from="791a64becbae4057a08b6ec891e92421" to="68f07e735e53461faabfb6aa84485fcc" derived="false">
+              <start-role id="umlar-80a0adfc-57db-4e40-9e46-a9ddf6a5461f" name="" multiplicity="1..*" navigability="" association-type="association" visibility="private" />
+              <end-role id="umlar-4f9e4026-0905-4ed4-996f-96f9611fb81b" name="" multiplicity="0..*" navigability="" association-type="association" visibility="private" />
+            </relation>
+          </item>
+        </abstract-items>
+        <layer id="76a2ccc339bf45f3ad2f5fc41efc81b5" name="Default" visible="true" enabled="true" locked="false">
+          <item id="791a64becbae4057a08b6ec891e92421" iid="0f9c1b7c83b64b799580e48e6f1ed99a" creation-date="05/04/2021 17:13:51" order-index="0" type="entity">
+            <layout ax="214" ay="102" awidth="165" aheight="164" x="214" y="102" width="165" height="164" rotation-center="-12.5,-2" />
+          </item>
+          <item id="ab9fc99f79bd4335b26d4fc99cac4ce4" iid="a80cdbb945d1429197592694bf982913" creation-date="05/04/2021 17:16:12" order-index="1" type="entity">
+            <layout ax="472" ay="102" awidth="165" aheight="164" x="472" y="102" width="165" height="164" rotation-center="-12.5,-2" />
+          </item>
+          <item id="68f07e735e53461faabfb6aa84485fcc" iid="17d02dd14af04e1dbb8fa0af6d969591" creation-date="05/04/2021 17:19:00" order-index="3" type="entity">
+            <layout ax="226.5" ay="353" awidth="140" aheight="164" x="226.5" y="353" width="140" height="160" />
+          </item>
+          <item id="ee2c274caac642c59cde672925204188" iid="d3ed9b90e8384b8da60ae221d8515bc3" creation-date="05/04/2021 17:19:49" order-index="4" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="297" y1="266" x2="297" y2="353" start-border-pos="0.624439461883408" end-border-pos="0.125892857142857" start-local-pos="112" end-local-pos="70.5" name-position="0,20">
+              <points>
+                <point x="297" y="266" />
+                <point x="297" y="353" />
+              </points>
+            </layout>
+            <relation from="791a64becbae4057a08b6ec891e92421" from-iid="0f9c1b7c83b64b799580e48e6f1ed99a" to="68f07e735e53461faabfb6aa84485fcc" to-iid="17d02dd14af04e1dbb8fa0af6d969591" />
+          </item>
+          <item id="5039d70939c94b59a8bf1bc42f25399b" iid="8cf23c33722547519f3a1acb2f91f292" creation-date="05/05/2021 15:10:39" order-index="5" type="relation">
+            <layout start-role-position="25,15" end-role-position="25,-15" end-role-width="62" start-multiplicity-position="25,-15" end-multiplicity-position="25,15" line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="379" y1="184" x2="472" y2="184" start-border-pos="0.375" end-border-pos="0.875" start-local-pos="82" end-local-pos="82" name-position="0,20">
+              <points>
+                <point x="379" y="184" />
+                <point x="472" y="184" />
+              </points>
+            </layout>
+            <relation from="791a64becbae4057a08b6ec891e92421" from-iid="0f9c1b7c83b64b799580e48e6f1ed99a" to="ab9fc99f79bd4335b26d4fc99cac4ce4" to-iid="a80cdbb945d1429197592694bf982913" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>

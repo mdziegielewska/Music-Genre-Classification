@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<sim-project version="12.79" multi-file="no" uid="simp3b82de6e458246648af14ad17a670d1e">
+  <meta>
+    <name>(Project)</name>
+    <authors>Marta Dzięgielewska</authors>
+    <description />
+  </meta>
+  <counters models="1">
+    <entity-names>
+      <counter>
+        <item-type type-id="actor" type="Actor" />
+        <value>1</value>
+      </counter>
+      <counter>
+        <item-type type-id="lifeline" type="Lifeline" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="sequence-action" type="Message" />
+        <value>10</value>
+      </counter>
+      <counter>
+        <item-type type-id="activation-bar" type="Execution Occurrence" />
+        <value>8</value>
+      </counter>
+    </entity-names>
+    <entity-ids>
+      <counter>
+        <item-type type-id="group" type="Group" />
+        <value>370</value>
+      </counter>
+      <counter>
+        <item-type type-id="actor" type="Actor" />
+        <value>2</value>
+      </counter>
+      <counter>
+        <item-type type-id="lifeline" type="Lifeline" />
+        <value>3</value>
+      </counter>
+      <counter>
+        <item-type type-id="sequence-action" type="Message" />
+        <value>11</value>
+      </counter>
+      <counter>
+        <item-type type-id="activation-bar" type="Execution Occurrence" />
+        <value>9</value>
+      </counter>
+    </entity-ids>
+    <diagrams>
+      <counter>
+        <type>SoftwareIdeasModeler.Core.Diagrams.UmlDiagrams.UmlSequenceDiagram</type>
+        <value>1</value>
+      </counter>
+    </diagrams>
+    <fields />
+  </counters>
+  <alias-groups />
+  <management uid="md-34551c3874284c3183c915f9bcd34974" name="" task-id-sequence="0">
+    <working-schedule uid="ws-9d0d5c366da94d4d895d2173435c0480" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+    <persons>
+      <person id="">
+        <first-name>Sonia</first-name>
+        <last-name>Kędzierska</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+        <working-schedule uid="ws-738c458f29bd4fdeb188b47f2825c92f" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+      </person>
+      <person id="">
+        <first-name>Sonia</first-name>
+        <last-name>Kędzierska</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+        <working-schedule uid="ws-1c1d99fb6a7c4229810f7a3242776a88" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+      </person>
+      <person id="">
+        <first-name>Sonia</first-name>
+        <last-name>Kędzierska</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+        <working-schedule uid="ws-a291b4607725450aba90f7e9ec89de39" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+      </person>
+      <person id="">
+        <first-name>Marta</first-name>
+        <last-name>Dzięgielewska</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+        <working-schedule uid="ws-1cb22904f97e4c8b930cfe75d436f252" hours="8" monday="8" tuesday="8" wednesday="8" thursday="8" friday="8" saturday="0" sunday="0" />
+      </person>
+      <person id="">
+        <first-name>Marta</first-name>
+        <last-name>Dzięgielewska</last-name>
+        <role />
+        <e-mail />
+        <phone-number />
+        <description />
+        <color>#00000000</color>
+      </person>
+    </persons>
+    <teams />
+    <sprints />
+    <projects />
+    <modules />
+    <tasks />
+    <to-dos />
+  </management>
+  <glossary id="glsr-d5779c6f049a402a8bdb02306b188028" />
+  <types default="UML">
+    <type-sets>
+      <type-set file="UmlTypes.xml" />
+    </type-sets>
+    <custom-types />
+  </types>
+  <items />
+  <models>
+    <model id="p2e177f4cc3f948ad83a9ce3797238c32_897625449" name="Model1" namespace="" order-index="1">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>04/28/2021 14:05:45</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-sequence" id="pf5c7b61924d240949e470c8fdbe1481c_935504168" name="SequenceDiagram1" order-index="1" uid="" show-id="false" show-name="true" show-parent-name="false" name-style="local-auto-parents" show-stereotypes="true" show-tagged-values="false" show-template-parameters="true" show-fields="true" show-field-tags="true" show-empty-compartments="true" show-special-indicators="false" show-rules="true" show-attributes="true" show-attribute-visibility="true" show-operations="true" show-operation-parameters="true" show-operation-visibility="true" show-visibility-sign="true" show-nullability="true" show-sequence-number="false" show-extension-points="false" show-relationship-texts="true" show-data="true" show-description="false" show-field-description="false" auto-routed-paths="false" default-line-style="default" view-location="16,-101">
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>04/28/2021 14:05:45</creation-date>
+          <change-date>04/28/2021 14:07:38</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <abstract-items>
+          <item id="9962294f23d64e76a5256298492b3742" cid="AC001" type="actor" name="Użytkownik niezalogowany" style-class="" change-tracking-state="added" creator="" creation-date="04/28/2021 14:05:51" visibility="undefined">
+            <owned-items>
+              <owned-item ref="17fce652770c4bd6b3114fae2faca369" />
+              <owned-item ref="2c50723f569747ad924bfe055b4879ff" />
+              <owned-item ref="a5d619bc015c4dcf9c9aacbaf570e6e4" />
+            </owned-items>
+          </item>
+          <item id="5221ad61e08143faaa9b43c9f1d8dec7" cid="LL001" type="lifeline" name="Aplikacja" style-class="" change-tracking-state="added" creator="" creation-date="04/28/2021 14:07:27" visibility="undefined">
+            <owned-items>
+              <owned-item ref="cecf527093bc47ce93a5953b52f91bbd" />
+              <owned-item ref="f28631d6a73c4d0d885bbc9a8e744264" />
+              <owned-item ref="066c6558411a4387aacbbdf9d109c8b4" />
+            </owned-items>
+            <lifeline classifier-name="" selector="" is-multi-object="false" />
+          </item>
+          <item id="d53c872055dd4d31bb66dcd58978fb49" cid="LL002" type="lifeline" name="Baza danych" style-class="" change-tracking-state="added" creator="" creation-date="04/28/2021 14:07:38" visibility="undefined">
+            <owned-items>
+              <owned-item ref="8ffcd04050a248779c6a0d017b9b5125" />
+              <owned-item ref="3139822073b74683b6e3f09043430176" />
+            </owned-items>
+            <lifeline classifier-name="" selector="" is-multi-object="false" />
+          </item>
+          <item id="8c0afe5fa1d14c728b8c9a6b51bacdc9" cid="SM001" type="sequence-action" name="Message1" style-class="" change-tracking-state="added" creator="" creation-date="04/28/2021 14:08:14" from="17fce652770c4bd6b3114fae2faca369" to="cecf527093bc47ce93a5953b52f91bbd" visibility="package">
+            <sequence-action type="call" message="Rejestracja" is-asynchronous="false" return-value="" assign-to-variable="">
+              <parameters />
+            </sequence-action>
+          </item>
+          <item id="17fce652770c4bd6b3114fae2faca369" cid="AB001" type="activation-bar" name="ExecutionOccurrence1" style-class="" owner="9962294f23d64e76a5256298492b3742" change-tracking-state="added" creator="" creation-date="04/28/2021 14:08:14" visibility="undefined" />
+          <item id="cecf527093bc47ce93a5953b52f91bbd" cid="AB002" type="activation-bar" name="ExecutionOccurrence2" style-class="" owner="5221ad61e08143faaa9b43c9f1d8dec7" change-tracking-state="added" creator="" creation-date="04/28/2021 14:08:14" visibility="undefined">
+            <activation-bar lifeline-ref="5221ad61e08143faaa9b43c9f1d8dec7" />
+          </item>
+          <item id="80abb6af41f24d9a8cba61e00b567604" cid="SM002" type="sequence-action" name="Message2" style-class="" change-tracking-state="added" creator="" creation-date="04/28/2021 14:08:33" from="cecf527093bc47ce93a5953b52f91bbd" to="8ffcd04050a248779c6a0d017b9b5125" visibility="package">
+            <sequence-action type="call" message="Wpisanie danych do bazy " is-asynchronous="false" return-value="" assign-to-variable="">
+              <parameters />
+            </sequence-action>
+          </item>
+          <item id="8ffcd04050a248779c6a0d017b9b5125" cid="AB003" type="activation-bar" name="ExecutionOccurrence3" style-class="" owner="d53c872055dd4d31bb66dcd58978fb49" change-tracking-state="added" creator="" creation-date="04/28/2021 14:08:33" visibility="undefined">
+            <activation-bar lifeline-ref="d53c872055dd4d31bb66dcd58978fb49" />
+          </item>
+          <item id="0396b0e7d72c47cdafe0259e6edf9b8a" cid="SM003" type="sequence-action" name="Message3" style-class="" change-tracking-state="added" creator="" creation-date="04/28/2021 14:08:55" from="2c50723f569747ad924bfe055b4879ff" to="f28631d6a73c4d0d885bbc9a8e744264" visibility="package">
+            <sequence-action type="call" message="Logowanie" is-asynchronous="false" return-value="" assign-to-variable="">
+              <parameters />
+            </sequence-action>
+          </item>
+          <item id="f28631d6a73c4d0d885bbc9a8e744264" cid="AB004" type="activation-bar" name="ExecutionOccurrence4" style-class="" owner="5221ad61e08143faaa9b43c9f1d8dec7" change-tracking-state="added" creator="" creation-date="04/28/2021 14:08:55" visibility="undefined">
+            <activation-bar lifeline-ref="5221ad61e08143faaa9b43c9f1d8dec7" />
+          </item>
+          <item id="2c50723f569747ad924bfe055b4879ff" cid="AB005" type="activation-bar" name="ExecutionOccurrence5" style-class="" owner="9962294f23d64e76a5256298492b3742" change-tracking-state="added" creator="" creation-date="04/28/2021 14:08:55" visibility="undefined" />
+          <item id="30b8d79e6fdf49faa4b5cf932130b990" cid="SM004" type="sequence-action" name="Message4" style-class="" change-tracking-state="added" creator="" creation-date="04/28/2021 14:09:40" from="f28631d6a73c4d0d885bbc9a8e744264" to="3139822073b74683b6e3f09043430176" visibility="package">
+            <sequence-action type="call" message="Czy są poprawne?" is-asynchronous="false" return-value="" assign-to-variable="">
+              <parameters />
+            </sequence-action>
+          </item>
+          <item id="3139822073b74683b6e3f09043430176" cid="AB006" type="activation-bar" name="ExecutionOccurrence6" style-class="" owner="d53c872055dd4d31bb66dcd58978fb49" change-tracking-state="added" creator="" creation-date="04/28/2021 14:09:40" visibility="undefined">
+            <activation-bar lifeline-ref="d53c872055dd4d31bb66dcd58978fb49" />
+          </item>
+          <item id="476256fd5df44860875eee117d465a64" cid="SM005" type="sequence-action" name="Message5" style-class="" change-tracking-state="added" creator="" creation-date="04/28/2021 14:10:24" from="f28631d6a73c4d0d885bbc9a8e744264" to="2c50723f569747ad924bfe055b4879ff" visibility="package">
+            <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+              <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;10;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;10;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <background type="solid" colors="#FFF2F2F2,#FFF2F2F2" />
+              <border color="#FF555555" width="2" dash-style="Solid" />
+              <label-connector color="#80000000" width="1" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+                  <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+                  <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <background type="solid" colors="#FF203D85,#FF203D85" />
+                  <border color="#FF203D85" width="2" dash-style="Solid" />
+                  <label-connector color="#80000000" width="1" dash-style="Dash" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
+            <sequence-action type="reply" message="Wyświetlenie informacji o zmianie statusu użytkownika" is-asynchronous="false" return-value="" assign-to-variable="">
+              <parameters />
+            </sequence-action>
+          </item>
+          <item id="9aff5ebc1bee4a44955b8875ec685e0f" cid="SM006" type="sequence-action" name="Message6" style-class="" change-tracking-state="added" creator="" creation-date="04/28/2021 14:11:44" from="f28631d6a73c4d0d885bbc9a8e744264" to="2c50723f569747ad924bfe055b4879ff" visibility="package">
+            <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+              <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;10;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;10;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <background type="solid" colors="#FFF2F2F2,#FFF2F2F2" />
+              <border color="#FF555555" width="2" dash-style="Solid" />
+              <label-connector color="#80000000" width="1" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+                  <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+                  <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <background type="solid" colors="#FF203D85,#FF203D85" />
+                  <border color="#FF203D85" width="2" dash-style="Solid" />
+                  <label-connector color="#80000000" width="1" dash-style="Dash" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
+            <sequence-action type="reply" message="Zapytanie o ponowne wprowadzenie danych logowania" is-asynchronous="false" return-value="" assign-to-variable="">
+              <parameters />
+            </sequence-action>
+          </item>
+          <item id="4593988e8bad440083884467e5b45f7f" cid="SM007" type="sequence-action" name="Message7" style-class="" change-tracking-state="added" creator="" creation-date="04/28/2021 14:12:32" from="3139822073b74683b6e3f09043430176" to="f28631d6a73c4d0d885bbc9a8e744264" visibility="package">
+            <sequence-action type="call" message="Są poprawne" is-asynchronous="false" return-value="" assign-to-variable="">
+              <parameters />
+            </sequence-action>
+          </item>
+          <item id="2b3f47bbe82547b6b36ec0ec274799ea" cid="SM008" type="sequence-action" name="Message8" style-class="" change-tracking-state="added" creator="" creation-date="04/28/2021 14:12:49" from="3139822073b74683b6e3f09043430176" to="f28631d6a73c4d0d885bbc9a8e744264" visibility="package">
+            <sequence-action type="call" message="Nie są poprawne" is-asynchronous="false" return-value="" assign-to-variable="">
+              <parameters />
+            </sequence-action>
+          </item>
+          <item id="a520ba40f2224705a8b73fbc7d487d78" cid="SM009" type="sequence-action" name="Message9" style-class="" change-tracking-state="added" creator="" creation-date="04/28/2021 18:22:42" from="a5d619bc015c4dcf9c9aacbaf570e6e4" to="066c6558411a4387aacbbdf9d109c8b4" visibility="package">
+            <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+              <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <background type="solid" colors="#FFF2F2F2,#FFF2F2F2" />
+              <border color="#FF555555" width="2" dash-style="Solid" />
+              <label-connector color="#80000000" width="1" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+                  <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+                  <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <background type="solid" colors="#FF203D85,#FF203D85" />
+                  <border color="#FF203D85" width="2" dash-style="Solid" />
+                  <label-connector color="#80000000" width="1" dash-style="Dash" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
+            <sequence-action type="call" message="Wprowadzenie piosenki do systemu " is-asynchronous="false" return-value="" assign-to-variable="">
+              <parameters />
+            </sequence-action>
+          </item>
+          <item id="066c6558411a4387aacbbdf9d109c8b4" cid="AB007" type="activation-bar" name="ExecutionOccurrence7" style-class="" owner="5221ad61e08143faaa9b43c9f1d8dec7" change-tracking-state="added" creator="" creation-date="04/28/2021 18:22:42" visibility="undefined">
+            <activation-bar lifeline-ref="5221ad61e08143faaa9b43c9f1d8dec7" />
+          </item>
+          <item id="a5d619bc015c4dcf9c9aacbaf570e6e4" cid="AB008" type="activation-bar" name="ExecutionOccurrence8" style-class="" owner="9962294f23d64e76a5256298492b3742" change-tracking-state="added" creator="" creation-date="04/28/2021 18:22:42" visibility="undefined" />
+          <item id="7055a63330f04030a59fdc39b3a878ab" cid="SM010" type="sequence-action" name="Message10" style-class="" change-tracking-state="added" creator="" creation-date="04/28/2021 18:23:24" from="066c6558411a4387aacbbdf9d109c8b4" to="a5d619bc015c4dcf9c9aacbaf570e6e4" visibility="package">
+            <style style-name="Custom Style" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#3A555555" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+              <text-style type="name" use-defaults="false" color="#FF555555" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <text-style type="text" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <text-style type="tagged-value" use-defaults="false" color="#FF555555" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <text-style type="stereotype" use-defaults="false" color="#FF555555" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+              <background type="solid" colors="#FFF2F2F2,#FFF2F2F2" />
+              <border color="#FF555555" width="2" dash-style="Solid" />
+              <label-connector color="#80000000" width="1" dash-style="Dash" />
+              <alternate-styles>
+                <alternate-style style-name="Alternate" shadow-type="smooth" shadow-offset="2,2" shadow-visible="true" shadow-color="#322A2A2A" shadow-radius="8" wrap-name-text="true" wrap-other-text="true" padding="2" margin="1" glow-color="#FFFFFFFF" accuracy="0.9">
+                  <text-style type="name" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;11.25;B" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="part-header" use-defaults="false" color="#FF1E1E1E" font="Verdana;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="text" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="left" vertical-alignment="center" shadow="false" />
+                  <text-style type="tagged-value" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9.75;" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <text-style type="stereotype" use-defaults="false" color="#FFE9E9E9" font="Segoe UI;9;I" horizontal-alignment="center" vertical-alignment="center" shadow="false" />
+                  <background type="solid" colors="#FF203D85,#FF203D85" />
+                  <border color="#FF203D85" width="2" dash-style="Solid" />
+                  <label-connector color="#80000000" width="1" dash-style="Dash" />
+                </alternate-style>
+              </alternate-styles>
+            </style>
+            <sequence-action type="reply" message="Wyświetlenie informacji o wprowadzonym utworze" is-asynchronous="false" return-value="" assign-to-variable="">
+              <parameters />
+            </sequence-action>
+          </item>
+        </abstract-items>
+        <layer id="ac7bcb56a6d24f3a909443167f6836c7" name="Default" visible="true" enabled="true" locked="false">
+          <item id="9962294f23d64e76a5256298492b3742" iid="f7086fba7cd74d9280da4256b9d57683" creation-date="04/28/2021 14:05:51" order-index="0" type="lifeline">
+            <layout ax="130" ay="-76" awidth="140" aheight="510" x="130" y="-76" width="140" height="510" rotation-center="0,-56" container-layout="simple" />
+          </item>
+          <item id="5221ad61e08143faaa9b43c9f1d8dec7" iid="44e6aedfb6894f15b74c79669ab86480" creation-date="04/28/2021 14:07:27" order-index="1" type="lifeline">
+            <layout ax="418" ay="-76" awidth="140" aheight="520" x="418" y="-76" width="140" height="500" container-layout="simple" />
+          </item>
+          <item id="d53c872055dd4d31bb66dcd58978fb49" iid="e9fff24d512244ebbbe7ac1ea778b4b8" creation-date="04/28/2021 14:07:38" order-index="2" type="lifeline">
+            <layout ax="665" ay="-76" awidth="140" aheight="520" x="665" y="-76" width="140" height="500" container-layout="simple" />
+          </item>
+          <item id="8c0afe5fa1d14c728b8c9a6b51bacdc9" iid="cd9c6a7edb5341908c4af98d57dbc10e" creation-date="04/28/2021 14:08:14" order-index="3" type="relation">
+            <layout message-x="344" message-y="176" line-style="oblique" lock-start-point="true" lock-end-point="true" start-absolute-lock="true" end-absolute-lock="true" lock-to-fields="false" auto-path="" x1="210" y1="160" x2="478" y2="160" start-border-pos="0.251" end-border-pos="0.99375" start-local-pos="0" end-local-pos="1" name-position="0,16">
+              <points>
+                <point x="210" y="160" />
+                <point x="478" y="160" />
+              </points>
+            </layout>
+            <relation from="17fce652770c4bd6b3114fae2faca369" from-iid="0413821e3e384cf0994a93a88c130aca" to="cecf527093bc47ce93a5953b52f91bbd" to-iid="1b9bedf7751b4126be11ffe4474f84b1" />
+            <sequence-action show-sequence-number="false" />
+          </item>
+          <item id="17fce652770c4bd6b3114fae2faca369" iid="0413821e3e384cf0994a93a88c130aca" container="9962294f23d64e76a5256298492b3742" container-iid="f7086fba7cd74d9280da4256b9d57683" creation-date="04/28/2021 14:08:14" order-index="4" type="entity">
+            <layout ax="190" ay="160" awidth="20" aheight="40" x="190" y="160" width="20" height="40" container-layout="simple" />
+          </item>
+          <item id="cecf527093bc47ce93a5953b52f91bbd" iid="1b9bedf7751b4126be11ffe4474f84b1" container="5221ad61e08143faaa9b43c9f1d8dec7" container-iid="44e6aedfb6894f15b74c79669ab86480" creation-date="04/28/2021 14:08:14" order-index="5" type="entity">
+            <layout ax="478" ay="159" awidth="20" aheight="40" x="478" y="159" width="20" height="40" container-layout="simple" />
+          </item>
+          <item id="80abb6af41f24d9a8cba61e00b567604" iid="b05459a8d15740689e8d25c220e4e748" creation-date="04/28/2021 14:08:33" order-index="6" type="relation">
+            <layout message-x="614" message-y="173" line-style="oblique" lock-start-point="true" lock-end-point="true" start-absolute-lock="true" end-absolute-lock="true" lock-to-fields="false" auto-path="" x1="498" y1="160" x2="725" y2="160" start-border-pos="0.25625" end-border-pos="0.999" start-local-pos="1" end-local-pos="0" name-position="2,13">
+              <points>
+                <point x="498" y="160" />
+                <point x="725" y="160" />
+              </points>
+            </layout>
+            <relation from="cecf527093bc47ce93a5953b52f91bbd" from-iid="1b9bedf7751b4126be11ffe4474f84b1" to="8ffcd04050a248779c6a0d017b9b5125" to-iid="a50157c9ba474078b1efa91ed4cbe400" />
+            <sequence-action show-sequence-number="false" />
+          </item>
+          <item id="8ffcd04050a248779c6a0d017b9b5125" iid="a50157c9ba474078b1efa91ed4cbe400" container="d53c872055dd4d31bb66dcd58978fb49" container-iid="e9fff24d512244ebbbe7ac1ea778b4b8" creation-date="04/28/2021 14:08:33" order-index="7" type="entity">
+            <layout ax="725" ay="160" awidth="20" aheight="40" x="725" y="160" width="20" height="40" container-layout="simple" />
+          </item>
+          <item id="0396b0e7d72c47cdafe0259e6edf9b8a" iid="c0bf6360b65c495d948a70128a15c87f" creation-date="04/28/2021 14:08:55" order-index="8" type="relation">
+            <layout message-x="344" message-y="262" line-style="oblique" lock-start-point="true" lock-end-point="true" start-absolute-lock="true" end-absolute-lock="true" lock-to-fields="false" auto-path="" x1="210" y1="249" x2="478" y2="249" start-border-pos="0.251" end-border-pos="0.999" start-local-pos="0" end-local-pos="0" name-position="0,13">
+              <points>
+                <point x="210" y="249" />
+                <point x="478" y="249" />
+              </points>
+            </layout>
+            <relation from="2c50723f569747ad924bfe055b4879ff" from-iid="62e5b7f7a48e43ea871db0f1c171c67a" to="f28631d6a73c4d0d885bbc9a8e744264" to-iid="325bef7f351643d180134035ac7dd4db" />
+            <sequence-action show-sequence-number="false" />
+          </item>
+          <item id="f28631d6a73c4d0d885bbc9a8e744264" iid="325bef7f351643d180134035ac7dd4db" container="5221ad61e08143faaa9b43c9f1d8dec7" container-iid="44e6aedfb6894f15b74c79669ab86480" creation-date="04/28/2021 14:08:55" order-index="9" type="entity">
+            <layout ax="478" ay="249" awidth="20" aheight="122" x="478" y="249" width="20" height="120" rotation-center="0,32.5" container-layout="simple" />
+          </item>
+          <item id="2c50723f569747ad924bfe055b4879ff" iid="62e5b7f7a48e43ea871db0f1c171c67a" container="9962294f23d64e76a5256298492b3742" container-iid="f7086fba7cd74d9280da4256b9d57683" creation-date="04/28/2021 14:08:55" order-index="10" type="entity">
+            <layout ax="190" ay="249" awidth="20" aheight="120" x="190" y="249" width="20" height="121" rotation-center="0,-31" container-layout="simple" />
+          </item>
+          <item id="30b8d79e6fdf49faa4b5cf932130b990" iid="5457c5988f044c3c9adcecc9e1437b29" creation-date="04/28/2021 14:09:40" order-index="11" type="relation">
+            <layout message-x="612" message-y="263" line-style="oblique" lock-start-point="true" lock-end-point="true" start-absolute-lock="true" end-absolute-lock="true" lock-to-fields="false" auto-path="" x1="498" y1="249" x2="725" y2="249" start-border-pos="0.251" end-border-pos="0.999" start-local-pos="0" end-local-pos="0" name-position="0,14">
+              <points>
+                <point x="498" y="249" />
+                <point x="725" y="249" />
+              </points>
+            </layout>
+            <relation from="f28631d6a73c4d0d885bbc9a8e744264" from-iid="325bef7f351643d180134035ac7dd4db" to="3139822073b74683b6e3f09043430176" to-iid="951856b30b774e2f9bd135544433e76e" />
+            <sequence-action show-sequence-number="false" />
+          </item>
+          <item id="3139822073b74683b6e3f09043430176" iid="951856b30b774e2f9bd135544433e76e" container="d53c872055dd4d31bb66dcd58978fb49" container-iid="e9fff24d512244ebbbe7ac1ea778b4b8" creation-date="04/28/2021 14:09:40" order-index="12" type="entity">
+            <layout ax="725" ay="249" awidth="20" aheight="120" x="725" y="249" width="20" height="110" container-layout="simple" />
+          </item>
+          <item id="476256fd5df44860875eee117d465a64" iid="9ca8fefaee2846cd9cbff4617d1980e0" creation-date="04/28/2021 14:10:24" order-index="13" type="relation">
+            <layout message-x="350" message-y="329" line-style="oblique" lock-start-point="true" lock-end-point="true" start-absolute-lock="true" end-absolute-lock="true" lock-to-fields="false" auto-path="" x1="478" y1="309" x2="210" y2="309" start-border-pos="0.877049180327869" end-border-pos="0.375" start-local-pos="60" end-local-pos="60" name-position="6,20">
+              <points>
+                <point x="478" y="309" />
+                <point x="210" y="309" />
+              </points>
+            </layout>
+            <relation from="f28631d6a73c4d0d885bbc9a8e744264" from-iid="325bef7f351643d180134035ac7dd4db" to="2c50723f569747ad924bfe055b4879ff" to-iid="62e5b7f7a48e43ea871db0f1c171c67a" />
+            <sequence-action show-sequence-number="false" />
+          </item>
+          <item id="9aff5ebc1bee4a44955b8875ec685e0f" iid="0eed2e59b1624cb4ad7441476dcb7f97" creation-date="04/28/2021 14:11:44" order-index="14" type="relation">
+            <layout message-x="344" message-y="398" line-style="oblique" lock-start-point="true" lock-end-point="true" start-absolute-lock="true" end-absolute-lock="true" lock-to-fields="false" auto-path="" x1="478" y1="369" x2="210" y2="369" start-border-pos="0.754098360655738" end-border-pos="0.499" start-local-pos="120" end-local-pos="120" name-position="0,29">
+              <points>
+                <point x="478" y="369" />
+                <point x="210" y="369" />
+              </points>
+            </layout>
+            <relation from="f28631d6a73c4d0d885bbc9a8e744264" from-iid="325bef7f351643d180134035ac7dd4db" to="2c50723f569747ad924bfe055b4879ff" to-iid="62e5b7f7a48e43ea871db0f1c171c67a" />
+            <sequence-action show-sequence-number="false" />
+          </item>
+          <item id="4593988e8bad440083884467e5b45f7f" iid="d57d2e54b8ed4981a02680fe201bfa1f" creation-date="04/28/2021 14:12:32" order-index="15" type="relation">
+            <layout message-x="613" message-y="324" line-style="oblique" lock-start-point="true" lock-end-point="true" start-absolute-lock="true" end-absolute-lock="true" lock-to-fields="false" auto-path="" x1="725" y1="310" x2="498" y2="310" start-border-pos="0.872916666666667" end-border-pos="0.375" start-local-pos="61" end-local-pos="61" name-position="1,14">
+              <points>
+                <point x="725" y="310" />
+                <point x="498" y="310" />
+              </points>
+            </layout>
+            <relation from="3139822073b74683b6e3f09043430176" from-iid="951856b30b774e2f9bd135544433e76e" to="f28631d6a73c4d0d885bbc9a8e744264" to-iid="325bef7f351643d180134035ac7dd4db" />
+            <sequence-action show-sequence-number="false" />
+          </item>
+          <item id="2b3f47bbe82547b6b36ec0ec274799ea" iid="464a38d910744713844faa8a33b499a8" creation-date="04/28/2021 14:12:49" order-index="16" type="relation">
+            <layout message-x="616" message-y="382" line-style="oblique" lock-start-point="true" lock-end-point="true" start-absolute-lock="true" end-absolute-lock="true" lock-to-fields="false" auto-path="" x1="725" y1="369" x2="498" y2="369" start-border-pos="0.751" end-border-pos="0.495901639344262" start-local-pos="120" end-local-pos="120" name-position="4,13">
+              <points>
+                <point x="725" y="369" />
+                <point x="498" y="369" />
+              </points>
+            </layout>
+            <relation from="3139822073b74683b6e3f09043430176" from-iid="951856b30b774e2f9bd135544433e76e" to="f28631d6a73c4d0d885bbc9a8e744264" to-iid="325bef7f351643d180134035ac7dd4db" />
+            <sequence-action show-sequence-number="false" />
+          </item>
+          <item id="a520ba40f2224705a8b73fbc7d487d78" iid="4c2c355174394e5987ebf4cf3e594d7c" creation-date="04/28/2021 18:22:42" order-index="17" type="relation">
+            <layout message-x="344" message-y="58" line-style="oblique" lock-start-point="true" lock-end-point="true" start-absolute-lock="true" end-absolute-lock="true" lock-to-fields="false" auto-path="" x1="210" y1="38" x2="478" y2="38" start-border-pos="0.251" end-border-pos="0.999" start-local-pos="0" end-local-pos="0" name-position="0,20">
+              <points>
+                <point x="210" y="38" />
+                <point x="478" y="38" />
+              </points>
+            </layout>
+            <relation from="a5d619bc015c4dcf9c9aacbaf570e6e4" from-iid="186be1eb124d4134a11c6ef6a499313b" to="066c6558411a4387aacbbdf9d109c8b4" to-iid="53451bf2a9a14a07b003499eae2e28ee" />
+            <sequence-action show-sequence-number="false" />
+          </item>
+          <item id="066c6558411a4387aacbbdf9d109c8b4" iid="53451bf2a9a14a07b003499eae2e28ee" container="5221ad61e08143faaa9b43c9f1d8dec7" container-iid="44e6aedfb6894f15b74c79669ab86480" creation-date="04/28/2021 18:22:42" order-index="18" type="entity">
+            <layout ax="478" ay="38" awidth="20" aheight="62" x="478" y="38" width="20" height="40" container-layout="simple" />
+          </item>
+          <item id="a5d619bc015c4dcf9c9aacbaf570e6e4" iid="186be1eb124d4134a11c6ef6a499313b" container="9962294f23d64e76a5256298492b3742" container-iid="f7086fba7cd74d9280da4256b9d57683" creation-date="04/28/2021 18:22:42" order-index="19" type="entity">
+            <layout ax="190" ay="38" awidth="20" aheight="60" x="190" y="38" width="20" height="40" container-layout="simple" />
+          </item>
+          <item id="7055a63330f04030a59fdc39b3a878ab" iid="97f350c884574759b66030d0d873afc0" creation-date="04/28/2021 18:23:24" order-index="20" type="relation">
+            <layout message-x="344" message-y="118" line-style="oblique" lock-start-point="true" lock-end-point="true" start-absolute-lock="true" end-absolute-lock="true" lock-to-fields="false" auto-path="" x1="478" y1="98" x2="210" y2="98" start-border-pos="0.758064516129032" end-border-pos="0.499" start-local-pos="60" end-local-pos="60" name-position="0,20">
+              <points>
+                <point x="478" y="98" />
+                <point x="210" y="98" />
+              </points>
+            </layout>
+            <relation from="066c6558411a4387aacbbdf9d109c8b4" from-iid="53451bf2a9a14a07b003499eae2e28ee" to="a5d619bc015c4dcf9c9aacbaf570e6e4" to-iid="186be1eb124d4134a11c6ef6a499313b" />
+            <sequence-action show-sequence-number="false" />
+          </item>
+        </layer>
+      </diagram>
+    </model>
+  </models>
+</sim-project>
