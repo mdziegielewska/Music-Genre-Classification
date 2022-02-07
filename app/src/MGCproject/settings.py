@@ -32,7 +32,7 @@ EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'MusicGenreClassification.app@gmail.com'
 EMAIL_HOST = 'smtp-relay.sendinblue.com'
 EMAIL_HOST_USER = 'MusicGenreClassification.app@gmail.com'
-EMAIL_HOST_PASSWORD = 'gahrAO18nVUkxzp0'
+EMAIL_HOST_PASSWORD = 'yourpassword'
 EMAIL_PORT = 587
 
 # Application definition
@@ -96,9 +96,9 @@ SESSION_TIMEOUT_REDIRECT = '/'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'SX0n6Aoap8',
-        'USER': 'SX0n6Aoap8',
-        'PASSWORD': 'k2ejx60CcZ',
+        'NAME': 'yourname',
+        'USER': 'youruser',
+        'PASSWORD': 'yourpassword',
         'HOST': 'remotemysql.com',
         'PORT': '3306'
     }
