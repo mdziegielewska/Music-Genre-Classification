@@ -10,7 +10,7 @@ The project was created for the purpose of completing the courses - Software Eng
 ### Getting Started
 
 1. Clone the repository:
-   ```git clone https://github.com/mdziegielewska/Automation-Playwright.git```
+   ```git clone https://github.com/mdziegielewska/Music-Genre-Classification/```
 
 2. Install dependencies
     ```pip install -r requirements.txt```
