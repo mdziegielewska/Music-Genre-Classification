@@ -20,7 +20,7 @@ The project was created for the purpose of completing the courses - Software Eng
 - Python
 - Django
 - Cypress
-- Software Ideas Modeller
+- Software Ideas Modeler
 
 
 ### Project structure
